@@ -1,0 +1,77 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'farm-green': {
+          DEFAULT: '#2E7D32',
+          50: '#E8F5E9',
+          100: '#C8E6C9',
+          200: '#A5D6A7',
+          300: '#81C784',
+          400: '#66BB6A',
+          500: '#2E7D32',
+          600: '#2C6B2F',
+          700: '#1B5E20',
+          800: '#145A1E',
+          900: '#0D4D16',
+        },
+        'nasa-blue': {
+          DEFAULT: '#0B3D91',
+          50: '#E3F2FD',
+          100: '#BBDEFB',
+          200: '#90CAF9',
+          300: '#64B5F6',
+          400: '#42A5F5',
+          500: '#0B3D91',
+          600: '#0A3780',
+          700: '#08296A',
+          800: '#061F54',
+          900: '#04153D',
+        },
+        'earth-brown': {
+          DEFAULT: '#8D6E63',
+          50: '#EFEBE9',
+          100: '#D7CCC8',
+          200: '#BCAAA4',
+          300: '#A1887F',
+          400: '#8D6E63',
+          500: '#795548',
+          600: '#6D4C41',
+          700: '#5D4037',
+          800: '#4E342E',
+          900: '#3E2723',
+        },
+        'sky-blue': {
+          DEFAULT: '#29B6F6',
+          50: '#E1F5FE',
+          100: '#B3E5FC',
+          200: '#81D4FA',
+          300: '#4FC3F7',
+          400: '#29B6F6',
+          500: '#03A9F4',
+          600: '#039BE5',
+          700: '#0288D1',
+          800: '#0277BD',
+          900: '#01579B',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'grow': 'grow 2s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce 2s infinite',
+      },
+      keyframes: {
+        grow: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
